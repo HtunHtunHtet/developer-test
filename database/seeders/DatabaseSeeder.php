@@ -26,5 +26,7 @@ class DatabaseSeeder extends Seeder
         $comment = Comment::factory()
             ->count(10)
             ->create();
+
+        $this->call(AchievementSeeder::class);
     }
 }
